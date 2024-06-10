@@ -9,7 +9,7 @@ Team --|> TeamHistory
 TeamHistory --|> Player
 
 class Match{
-    String id
+    String id <hash team names und date>
     Team home_team
     Team away_team
     Team winner
@@ -21,6 +21,7 @@ class Match{
 }
 
 class Team{
+    String name
     TeamHistory history
     int wins
     float avg_score
@@ -28,6 +29,7 @@ class Team{
 }
 
 class TeamHistory{
+    String team_name
     DateTime date
     Set(Player) players
     Trainer trainer
